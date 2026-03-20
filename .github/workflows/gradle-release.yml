@@ -42,7 +42,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           # allowUpdates: true
-          artifacts: "${{github.workspace}}/app/build/outputs/apk/release/*.apk"
+          artifacts: "${{github.workspace}}/app/build/outputs/apk/debug/*.apk"
       
       # Upload to COS
       - name: Upload to COS
